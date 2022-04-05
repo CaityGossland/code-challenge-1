@@ -59,7 +59,7 @@ mongoose
     `mongodb+srv://${process.env.REACT_APP_MONGODB_USER}:${process.env.REACT_APP_MONGODB_PASSWORD}@code-challenge-1.23rmg.mongodb.net/myDatabase?retryWrites=true&w=majority`
   )
   .then(() => {
-    app.listen(5000);
+    app.listen(process.env.PORT || 5000);
   })
   .catch((err) => {
     console.log(err);
