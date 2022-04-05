@@ -1,0 +1,25 @@
+.pagination {
+  margin-top: 45px;
+  display: flex;
+  list-style: none;
+  outline: none;
+  justify-content: center;
+}
+
+.pagination > .active > a {
+  background-color: #ff0055;
+  color: #fff;
+}
+
+.pagination > li > a {
+  border: 1px solid #ff0055;
+  padding: 5px 10px;
+  outline: none;
+  cursor: pointer;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  color: #ff0055;
+  background-color: white;
+}
