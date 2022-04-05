@@ -21,9 +21,7 @@ const Places = () => {
   useEffect(() => {
     const fetchPlaces = async () => {
       try {
-        const responseData = await sendRequest(
-          `http://localhost:5000/api/places`
-        );
+        const responseData = await sendRequest(`/api/places`);
         setPlaces(responseData.places);
         setPageCount(Math.ceil(responseData.places.length / PER_PAGE));
       } catch (err) {}

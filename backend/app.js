@@ -12,7 +12,7 @@ const HttpError = require("./models/http-error");
 
 const app = express();
 
-app.use(express.static(path.resolve(__dirname, "../frontend/build")));
+app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.use(bodyParser.json());
 
@@ -31,6 +31,10 @@ app.use((req, res, next) => {
 
 app.use("/api/places", placesRoutes);
 app.use("/api/users", usersRoutes);
+
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "../frontend/build/index.html"));
+});
 
 app.use((req, res, next) => {
   const error = new HttpError("Could not find this route.", 404);

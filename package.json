@@ -1,1 +1,25 @@
-{}
+{
+  "name": "code-challenge-1",
+  "version": "1.0.0",
+  "description": "The provided codebase is a simple MERN application called “Our Places”. A user can sign up to create a profile in the app. Once the profile is created, the user can log in and create a “Place” record under their own profile. A Place record includes a place title, a description, a picture and an address. Note that the address verification takes places via the call to the Google Maps API. The record owner can also edit their records (some fields) and delete their own records. Users can only see their own records and not the records created by other users.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd backend && npm install && npm start",
+    "heroku-postbuild": "cd frontend && npm install && npm run build"
+  },
+  "engines": {
+    "node": "17.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CaityGossland/code-challenge-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CaityGossland/code-challenge-1/issues"
+  },
+  "homepage": "https://github.com/CaityGossland/code-challenge-1#readme"
+}
