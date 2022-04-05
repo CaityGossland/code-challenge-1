@@ -29,3 +29,4 @@ You will need to get a Google api token(GOOGLE_API_TOKEN) from https://developer
 - install heroku-cli (npm install heroku-cli)
 - run the following commands
   - heroku create (will prompt login)
+  - git push heroku main
