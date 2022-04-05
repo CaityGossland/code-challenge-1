@@ -12,6 +12,8 @@ const HttpError = require("./models/http-error");
 
 const app = express();
 
+app.use(express.static(path.resolve(__dirname, "../frontend/build")));
+
 app.use(bodyParser.json());
 
 app.use("/uploads/images", express.static(path.join("uploads", "images")));

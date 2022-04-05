@@ -29,7 +29,7 @@ const UserPlaces = () => {
       prevPlaces.filter((place) => place.id !== deletedPlaceId)
     );
   };
-  console.log(loadedPlaces);
+
   return (
     <React.Fragment>
       <ErrorModal error={error} onClear={clearError} />
